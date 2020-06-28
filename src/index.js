@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from "prop-types";
 import styles from './styles.module.css'
 import Cell from './cell'
 
@@ -38,4 +39,9 @@ export default function DataTable(props) {
       </div>
     </div>
   )
+}
+
+DataTable.propTypes = {
+  headings: PropTypes.string.isRequired,
+  rows: PropTypes.string.isRequired
 }
